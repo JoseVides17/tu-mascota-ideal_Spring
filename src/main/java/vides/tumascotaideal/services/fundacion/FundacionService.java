@@ -1,7 +1,6 @@
 package vides.tumascotaideal.services.fundacion;
 
 import vides.tumascotaideal.entities.Fundacion;
-import vides.tumascotaideal.entities.Mascota;
 
 import java.util.List;
 
