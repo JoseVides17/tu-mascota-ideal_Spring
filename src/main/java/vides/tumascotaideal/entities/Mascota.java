@@ -33,7 +33,7 @@ public class Mascota {
 
     @ManyToOne
     @JoinColumn(name = "persona_id")
-    @JsonManagedReference
+    @JsonIgnore
     private Persona persona;
 
 }

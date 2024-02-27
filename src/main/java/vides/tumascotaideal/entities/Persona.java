@@ -2,6 +2,7 @@ package vides.tumascotaideal.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,7 +33,7 @@ public class Persona {
     private String departamentoResidencia;
     private String ubicacion;
     private Boolean estado;
-    @JsonIgnore
+    @JsonManagedReference
     @OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
     private List<Mascota> mascotas = new ArrayList<>();
     @OneToOne
